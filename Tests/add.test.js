@@ -1,5 +1,7 @@
+import add from "../src/add.js";
+
 test('Basic test1', () => {
-  expect(true);
+  expect(add(3,2)).toBe(5);
 });
 
 test('Basic test2', () => {
