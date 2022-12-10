@@ -13,13 +13,10 @@ test('Counting active values from users should give { true: 2, false: 1 }', () =
 // Negative testing
 
 test('Incorrect parameter 1 returns TypeError', () => {
-    expect(countBy("a", 1.111)).toThrowError(TypeError);
+    expect(countBy("a", value => value.active)).toThrowError(TypeError);
 });
   
 test('Incorrect parameter 2 returns TypeError', () => {
-    expect(countBy(1.111, "a")).toThrowError(TypeError);
+    expect(countBy(users, "a")).toThrowError(TypeError);
 });
   
-test('Incorrect parameter 3 returns TypeError', () => {
-    expect(countBy(1.111, "a")).toThrowError(TypeError);
-});
