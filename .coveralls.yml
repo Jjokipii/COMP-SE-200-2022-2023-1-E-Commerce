@@ -1,1 +1,1 @@
-
+repo-token: ${{ secrets.GITHUB_TOKEN }}
