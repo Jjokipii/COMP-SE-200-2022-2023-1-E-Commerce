@@ -1,4 +1,4 @@
-import add from "../src/add.js";
+import slice from "../src/slice.js";
 
 var array = [1, 2, 3, 4]
 
