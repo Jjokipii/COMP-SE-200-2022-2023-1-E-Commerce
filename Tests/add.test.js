@@ -41,18 +41,18 @@ test('Adding Number.MAX_VALUE and 0 should equal Number.MAX_VALUE', () => {
 // Negative testing
 
 test('Incorrect parameter 1 (String) returns TypeError', () => {
-  expect(add("a", 1)).toEqual(TypeError);
+  expect(add("a", 1)).toThrowError(TypeError);
 });
 
 test('Incorrect parameter 2 (String) returns TypeError', () => {
-  expect(add(1, "a")).toEqual(TypeError);
+  expect(add(1, "a")).toThrowError(TypeError);
 });
 
 test('Incorrect parameter 1 (Null) returns TypeError', () => {
-  expect(add("a", 1)).toEqual(TypeError);
+  expect(add(null, 1)).toThrowError(TypeError);
 });
 
 test('Incorrect parameter 2 (Null) returns TypeError', () => {
-  expect(add(1, "a")).toEqual(TypeError);
+  expect(add(1, null)).toThrowError(TypeError);
 });
 
