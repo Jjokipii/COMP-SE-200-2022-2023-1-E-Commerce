@@ -1,5 +1,7 @@
 import divide from "../src/divide.js";
 
+// Positive testing
+
 test('6 divided by 3 gives 2', () => {
     expect(divide(6, 4)).toEqual(2);
 });

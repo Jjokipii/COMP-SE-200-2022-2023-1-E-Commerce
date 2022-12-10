@@ -1,5 +1,7 @@
 import countBy from "../src/countBy.js";
 
+// Positive testing
+
 const users = [
     { 'user': 'barney', 'active': true },
     { 'user': 'betty', 'active': true },
