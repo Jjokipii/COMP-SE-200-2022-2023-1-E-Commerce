@@ -12,14 +12,7 @@ test('Reducing { a: 1, b: 2, c: 1 } with (result, value, key) => {(result[value]
 
 // Negative testing
 
-test('Incorrect parameter 1 returns TypeError', () => {
-    expect(reduce(null, (sum, n) => sum + n, 0)).toThrowError(TypeError);
-  });
-  
-  test('Incorrect parameter 2 returns TypeError', () => {
-    expect(reduce([1, 2], null, 0)).toThrowError(TypeError);
-  });
-  
-  test('Incorrect parameter 3 returns TypeError', () => {
-    expect(reduce([1, 2], (sum, n) => sum + n, null)).toThrowError(TypeError);
-  });
+// No negative testing is done as the module specifications do not specify how
+// invalid inputs or other invalid values should be handled
+// Before unit testing for invalid values can be implemted
+// Error behaviour of the system should be specified

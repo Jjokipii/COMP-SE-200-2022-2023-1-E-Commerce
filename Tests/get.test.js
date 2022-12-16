@@ -18,19 +18,8 @@ test('Getting a.b.c, default from object should return default', () => {
 
 // Negative testing
 
-test('Incorrect parameter 1 (String) returns TypeError', () => {
-    expect(get("a", 'a[0].b.c')).toThrowError(TypeError);
-  });
-  
-  test('Incorrect parameter 2 (Number) returns TypeError', () => {
-    expect(get(object, 1)).toThrowError(TypeError);
-  });
-  
-  test('Incorrect parameter 1 (Null) returns TypeError', () => {
-    expect(get(null, 'a[0].b.c')).toThrowError(TypeError);
-  });
-  
-  test('Incorrect parameter 2 (Null) returns TypeError', () => {
-    expect(get(object, null)).toThrowError(TypeError);
-  });
+// No negative testing is done as the module specifications do not specify how
+// invalid inputs or other invalid values should be handled
+// Before unit testing for invalid values can be implemted
+// Error behaviour of the system should be specified
   

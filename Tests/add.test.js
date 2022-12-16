@@ -44,4 +44,3 @@ test('Adding Number.MAX_VALUE and 0 should equal Number.MAX_VALUE', () => {
 // invalid inputs or other invalid values should be handled
 // Before unit testing for invalid values can be implemted
 // Error behaviour of the system should be specified
-
