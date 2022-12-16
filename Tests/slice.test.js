@@ -48,3 +48,7 @@ test('Slicing from 3 to 1 should output []', () => {
   var array = [1, 2, 3, 4];
   expect(slice(array, 3, 1)).toEqual([]);
 });
+
+// Negative testing done to the module is limited
+// Before negative testing for invalid paramaters and limits can be implemented
+// Moudule error behaviour should be specified

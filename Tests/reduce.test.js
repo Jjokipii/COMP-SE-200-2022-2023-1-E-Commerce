@@ -12,7 +12,6 @@ test('Reducing { a: 1, b: 2, c: 1 } with (result, value, key) => {(result[value]
 
 // Negative testing
 
-// No negative testing is done as the module specifications do not specify how
-// invalid inputs or other invalid values should be handled
-// Before unit testing for invalid values can be implemted
-// Error behaviour of the system should be specified
+// Negative testing done to the module is limited
+// Before negative testing for invalid paramaters and limits can be implemented
+// Moudule error behaviour should be specified
