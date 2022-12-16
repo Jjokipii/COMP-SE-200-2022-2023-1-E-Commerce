@@ -18,24 +18,17 @@ test('Ceil of 6040 with rounding of -2 decimals should be 6100', () => {
   expect(ceil(6040, -2)).toBe(6100);
 });
 
-test('Ceil of 1.23456 with rounding of 0 decimals should be 2', () => {
+test('Ceil of 1 with rounding of 0 decimals should be 1', () => {
   expect(ceil(1)).toBe(1);
+});
+
+test('Ceil of 1 with rounding of 2 decimals should be 1', () => {
+  expect(ceil(1, 2)).toBe(1);
 });
 
 // Negative testing
 
-test('Incorrect parameter 1 (String) returns TypeError', () => {
-  expect(ceil("a", 1.111)).toThrowError(TypeError);
-});
-
-test('Incorrect parameter 2 (String) returns TypeError', () => {
-  expect(ceil(1.111, "a")).toThrowError(TypeError);
-});
-
-test('Incorrect parameter 1 (Null) returns TypeError', () => {
-  expect(ceil(null, 1.111)).toThrowError(TypeError);
-});
-
-test('Incorrect parameter 2 (Null) returns TypeError', () => {
-  expect(ceil(1.111, null)).toThrowError(TypeError);
-});
+// No negative testing is done as the module specifications do not specify how
+// invalid inputs or other invalid values should be handled
+// Before unit testing for invalid values can be implemted
+// Error behaviour of the system should be specified
