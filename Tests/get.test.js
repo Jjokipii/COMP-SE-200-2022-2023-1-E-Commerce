@@ -9,17 +9,20 @@ test('Getting a[0].b.c from object should return 3', () => {
 });
 
 test('Getting [a, 0, b, c] from object should return 3', () => {
-    expect(get(object, ['a', '0', 'b', 'c'])).toEqual(3);
-  });
+  expect(get(object, ['a', '0', 'b', 'c'])).toEqual(3);
+});
 
-test('Getting a.b.c, default from object should return default', () => {
-    expect(get(object, 'a.b.c', 'default')).toEqual('default');
-  })
 
 // Negative testing
 
-// No negative testing is done as the module specifications do not specify how
-// invalid inputs or other invalid values should be handled
-// Before unit testing for invalid values can be implemted
-// Error behaviour of the system should be specified
-  
+test("Null object returns undefined", () => {
+  expect(get(null, 'a[0].b.c')).toEqual(undefined);
+});
+
+test('Getting a.b.c, default from object should return default', () => {
+  expect(get(object, 'a.b.c', 'default')).toEqual('default');
+})
+
+// Negative testing done to the module is limited
+// Before negative testing for invalid paramaters and limits can be implemented
+// Moudule error behaviour should be specified
