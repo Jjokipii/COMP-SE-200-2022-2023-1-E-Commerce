@@ -26,9 +26,16 @@ test('Ceil of 1 with rounding of 2 decimals should be 1', () => {
   expect(ceil(1, 2)).toBe(1);
 });
 
+test('Ceil of 1.1234e3 with rounding of 2 decimals should be 1123.5', () => {
+  expect(ceil(1.12345e3 , 1)).toBe(1123.5);
+});
+
 // Negative testing
 
-// No negative testing is done as the module specifications do not specify how
-// invalid inputs or other invalid values should be handled
-// Before unit testing for invalid values can be implemted
-// Error behaviour of the system should be specified
+test('Null precission should return default value', () => {
+  expect(ceil(601, null)).toBe(601);
+});
+
+// Negative testing done to the system is limited
+// Before negative testing for invalid paramaters and limits can be implemented
+// Moudule error behaviour should be specified

@@ -51,3 +51,7 @@ test('Undefined parameter one should return parmater two value', () => {
 test('Undefined parameter two should return parmater one value', () => {
   expect(add(3, undefined)).toEqual(3);
 });
+
+// Negative testing done to the system is limited
+// Before negative testing for invalid paramaters and limits can be implemented
+// Moudule error behaviour should be specified
