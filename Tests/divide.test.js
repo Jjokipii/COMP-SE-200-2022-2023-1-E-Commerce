@@ -20,7 +20,18 @@ test('3 divided by 6 gives 0.5', () => {
 
 // Negative testing
 
-// No negative testing is done as the module specifications do not specify how
-// invalid inputs or other invalid values should be handled
-// Before unit testing for invalid values can be implemted
-// Error behaviour of the system should be specified
+test('Undefined parameters should return default value 1', () => {
+    expect(divide(undefined, undefined)).toEqual(1);
+});
+
+test('Undefined parameter one should return parmater two value', () => {
+    expect(divide(undefined, 3)).toEqual(3);
+});
+
+test('Undefined parameter two should return parmater one value', () => {
+    expect(divide(3, undefined)).toEqual(3);
+});
+  
+  // Negative testing done to the module is limited
+  // Before negative testing for invalid paramaters and limits can be implemented
+  // Moudule error behaviour should be specified

@@ -36,6 +36,6 @@ test('Null precission should return default value', () => {
   expect(ceil(601, null)).toBe(601);
 });
 
-// Negative testing done to the system is limited
+// Negative testing done to the module is limited
 // Before negative testing for invalid paramaters and limits can be implemented
 // Moudule error behaviour should be specified
