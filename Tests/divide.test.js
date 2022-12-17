@@ -2,7 +2,7 @@ import divide from "../src/divide.js";
 
 // Positive testing
 
-/* test('6 divided by 3 gives 2', () => {
+test('6 divided by 3 gives 2', () => {
     expect(divide(6, 3)).toEqual(2);
 });
 
@@ -16,7 +16,7 @@ test('6 divided by 1 gives 6', () => {
 
 test('3 divided by 6 gives 0.5', () => {
     expect(divide(3, 6)).toEqual(0.5);
-}); */
+});
 
 // Negative testing
 
