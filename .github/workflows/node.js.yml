@@ -31,7 +31,7 @@ jobs:
     - run: npm test
     
     - run: npm i coverage-badges-cli -g
-    - run: coverage-badges --output coverage/badges.svg
+    - run: coverage-badges --output ./badges.svg
     
     - name: Coveralls Parallel
       uses: coverallsapp/github-action@master
